@@ -10,8 +10,8 @@ class CubeFloor {
         this.matCapMap = this.texLoader.load('assets/textures/shinyBall.jpg')
 
         this.params = {
-            xNum: 100,
-            zNum: 100,
+            xNum: 40,
+            zNum: 40,
             wIntensity: 0,
             wStartHeight: 0.1
         }

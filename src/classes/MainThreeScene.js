@@ -29,13 +29,13 @@ class MainThreeScene {
         //MAIN SCENE INSTANCE
         this.bgCol = new THREE.Color(0x151515)
         this.scene = new THREE.Scene()
-        this.fog = new THREE.Fog(this.bgCol, 10, 20)
+        this.fog = new THREE.Fog(this.bgCol, 20, 40)
         this.scene.fog = this.fog
         this.scene.background = this.bgCol
 
         //CAMERA AND ORBIT CONTROLLER
-        this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-        this.camera.position.set(0, 5, 5)
+        this.camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000)
+        this.camera.position.set(0, 10, 15)
         this.controls = new OrbitControls(this.camera, this.renderer.domElement)
         this.controls.enabled = config.controls
         this.controls.maxDistance = 1500
